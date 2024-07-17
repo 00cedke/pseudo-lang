@@ -8,5 +8,6 @@ import (
 )
 
 func main() {
-	os.Exit(plc.Compiler(os.Args))
+	exitCode := plc.Compiler(os.Args)
+	os.Exit(exitCode)
 }
